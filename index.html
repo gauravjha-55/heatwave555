@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HeatWave555</title>
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-logo">
+            <a href="index.html">
+                <span class="logo-main">Heat</span><span class="logo-after">Wave555</span>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#about">
+                    <i class="fa-solid fa-user"></i>
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="#mods">
+                    <i class="fa-solid fa-cube"></i>
+                    Modpacks
+                </a>
+            </li>
+            <li>
+                <a href="#texturepack">
+                    <i class="fa-solid fa-fire"></i>
+                    Texture Pack
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/gauravjha-55" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <img src="icon.png" alt="" class="icon">
+    <div class="maintxt">
+        <div class="s1">Hello gamers</div>
+        <div class="s2">Heatwave</div>
+        <div class="s3">here</div>
+    </div>
+    <div class="abouttxt" id="about">
+        <div class="profile-card">
+            <div class="icon-holder">
+                <img src="icon.png" alt="profile icon">
+            </div>
+            <div class="intro">
+                <h2>Who is Heatwave</h2>
+                <p>
+                    Hello, I’m Heatwave. coder,gamer and a obedient student
+                    This website is a resourse to all minecraft player who are seaking to optimise their vanilla
+                    minecraft to play smoothly with high FPS and greater performance also don't forget to check out my
+                    <a href="#">resource pack</a>
+                    to see some of my basic project you can explore my <a
+                        href="https://www.github.com/gauravjha-55">Github</a> repositories
+                    my name is Gaurav Jha studying in grade 8
+                    i am also a frontend developer
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="mods">
+        <h2>HeatWave's Modpack</h2>
+        <div class="mod-controls">
+            <div class="mod-layout">
+                <!-- MAIN INFO BOX -->
+                <div id="modDetails" class="mod-details hidden">
+                    <h3 id="modVersion">Modpack</h3>
+                    <p id="modInfo">
+                        Information about the selected modpack.
+                    </p>
+                    <a id="downloadBtn" href="#" download>
+                        Download Modpack
+                    </a>
+                    <button id="showModsBtn">
+                        Show Mods
+                    </button>
+                </div>
+                <!-- MODS TABLE -->
+                <div id="modsTableBox" class="mods-table-box hidden">
+                    <h3>Included Mods</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Mod Name</th>
+                            </tr>
+                        </thead>
+                        <tbody id="modsTableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+            <label for="version">Select Version:</label>
+            <select id="version">
+                <option value="">Choose Modpack</option>
+                <option value="1.21.11">1.21.11</option>
+                <option value="26.1">26.1</option>
+                <option value="builders">Builders Modpack</option>
+                <option value="extra">Extra Mods</option>
+            </select>
+        </div>
+    </div>
+    <!-- Texture Pack Section -->
+    <div id="texturepack">
+        <h2>HeatWave Texture Pack</h2>
+        <div class="texture-card">
+            <img src="pack.png" alt="Texture Pack Preview" class="texture-img">
+            <div class="texture-info">
+                <h3>HeatWave's Pack</h3>
+                <p>
+                    A clean and smooth Minecraft texture pack designed for
+                    better FPS, cleaner PvP visuals, and an enhanced vanilla feel.
+                </p>
+                <ul>
+                    <li>⚡ FPS Boosted</li>
+                    <li>🎮 PvP Optimized</li>
+                    <li>✨ Clean GUI</li>
+                    <li>🔥 Custom Particles</li>
+                </ul>
+                <a href="texture/heatwave-pack.zip" download class="texture-btn">
+                    Download Pack
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <!-- Left Icon -->
+            <div class="footer-icon">
+                <img src="icon.png" alt="logo">
+            </div>
+
+            <!-- Center Columns -->
+            <div class="footer-columns">
+
+                <div class="column">
+                    <h3>GitHub Repositories</h3>
+                    <a href="https://gauravjha-55.github.io/narrator">narrator</a>
+                    <a href="https://gauravjha-55.github.io/holiday">holiday project</a>
+                    <a href="https://gauravjha-55.github.io/cps-checker">cps-checker</a>
+                    <a href="https://gauravjha-55.github.io/clonedgis">GIS clone</a>
+                    <a href="https://github.com/gauravjha-55/">my dashboard</a>
+                </div>
+
+                <div class="column">
+                    <h3>Links</h3>
+                    <a href="#about">About Me</a>
+                    <a href="#">Back to Start</a>
+                    <a href="">Heatwave</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- GitHub Icon -->
+        <div class="footer-github">
+            <a href="https://github.com/" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+
+        <!-- Bottom Copyright -->
+        <div class="footer-bottom">
+            © copyright HeatWave <span id="year"></span> |
+            Website made by <span class="heatwave">Heatwave</span>
+        </div>
+
+    </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script>
+
+const modpacks = {
+
+    "1.21.11": {
+        info: "Smooth FPS optimized Minecraft setup with mods nessesery for better pvp for version 1.21.11.",
+
+        file: "mods/1.21.11.zip",
+
+        mods: [
+            "Sodium",
+            "Lithium",
+            "Better F3",
+            "Combat hitbox",
+            "Appleskin",
+            "Mod Menu",
+            "Zoomify",
+            "etc.."
+        ]
+    },
+
+    "26.1": {
+        info: "Smooth FPS optimized Minecraft setup with mods nessesery for better pvp for version 26.1.",
+
+        file: "mods/26.1.zip",
+
+        mods: [
+            "BetterF3",
+            "AppleSkin",
+            "Armor Durability",
+            "FullBrightness Toggle",
+            "Simple Voice Chat",
+            "Status Effect Bars",
+            "Better Hitreg",
+            "etc."
+        ]
+    },
+
+    "builders": {
+        info: "Perfect modpack for builders and creative Minecraft projects(1.21.11).",
+
+        file: "mods/builders-modpack.zip",
+
+        mods: [
+            "Litematica",
+            "WorldEdit",
+            "Flashback",
+            "Axiom",
+            "Xaero's Minimap",
+            "Malilib"
+        ]
+    },
+
+    "extra": {
+        info: "(coming soon!!!)Extra useful utility and experimental mods collection.",
+
+        file: "mods/extra-mods.zip",
+
+        mods: [
+            "e4mc",
+            "Carpet mod",
+            "ClearWaterLava",
+            "Collective",
+            "Malilib",
+            "Fabric API",
+            "etc."
+        ]
+    }
+};
+let currentMods = [];
+/* =========================
+   DROPDOWN CHANGE
+========================= */
+document.getElementById("version").addEventListener("change", function () {
+    const selected = this.value;
+    const detailsBox = document.getElementById("modDetails");
+    const tableBox = document.getElementById("modsTableBox");
+    if (modpacks[selected]) {
+        document.getElementById("modVersion").textContent =
+            selected.toUpperCase();
+        document.getElementById("modInfo").textContent =
+            modpacks[selected].info;
+        document.getElementById("downloadBtn").href =
+            modpacks[selected].file;
+        currentMods = modpacks[selected].mods;
+        detailsBox.classList.remove("hidden");
+        tableBox.classList.add("hidden");
+    }
+});
+/* =========================
+   SHOW MODS BUTTON
+========================= */
+document.getElementById("showModsBtn").addEventListener("click", function () {
+    const tableBody = document.getElementById("modsTableBody");
+    const tableBox = document.getElementById("modsTableBox");
+    tableBody.innerHTML = "";
+    currentMods.forEach((mod, index) => {
+        tableBody.innerHTML += `
+        <tr>
+            <td>${index + 1}</td>
+            <td>${mod}</td>
+        </tr>
+        `;
+    });
+    tableBox.classList.remove("hidden");
+});
+</script>
+</body>
+</html>
